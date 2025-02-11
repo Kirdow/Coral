@@ -42,6 +42,11 @@ project "Coral.Native"
         symbols "Off"
         optimize "On"
 
+    filter { "configurations:Dist" }
+        runtime "Release"
+        symbols "Off"
+        optimize "On"
+
 	filter { "system:windows" }
 		defines { "CORAL_WINDOWS" }
 
