@@ -38,3 +38,8 @@ project "Testing.Native"
         runtime "Release"
         defines { "CORAL_TESTING_RELEASE" }
 	filter {}
+
+    filter { "configurations:Dist" }
+        runtime "Release"
+	defines { "CORAL_TESTING_RELEASE" }
+	filter {}
